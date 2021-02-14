@@ -5,7 +5,8 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 import Right from './components/right';
 import AOS from "aos/dist/aos.js";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
+import "./styles/main.css"
 function App() {
   AOS.init();
 

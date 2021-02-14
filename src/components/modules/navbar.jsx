@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {Link} from "react-router-dom"
+import arrow from "../../img/page2/arrow.svg"
 class NavBar extends Component {
   state = {
     toggelstatus: false,
@@ -21,7 +22,7 @@ class NavBar extends Component {
         <div className="nav_btn" onClick={this.navHandler}>
           {" "}
           <div className="imgarea">
-          <img src="./img/page2/arrow.svg" id="btn" alt="" />{" "}
+          <img src={arrow} id="btn" alt="" />{" "}
 
           </div>
         </div>
