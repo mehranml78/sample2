@@ -1,12 +1,11 @@
 import Contact from './components/contact';
 import Left from './components/left';
 import Content from './components/content';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 import Right from './components/right';
 import AOS from "aos/dist/aos.js";
 import "aos/dist/aos.css"
-import NavBar from './components/modules/navbar';
 function App() {
   AOS.init();
 
@@ -24,12 +23,10 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Switch>
-          <Route exact={true} path="/">
+          <Route exact={true} path="/sample2">
             <Main />
           </Route>
-          <Route exact={true} path="/nav">
-            <NavBar />
-          </Route>
+          <Redirect from="*" to="/sample-2" />
         </Switch>
       </div>
     </BrowserRouter>
